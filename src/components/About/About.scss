@@ -1,5 +1,5 @@
-@import "../../../scss/mixins";
-@import "../../../scss/variables";
+@import "../../scss/mixins";
+@import "../../scss/variables";
 
 .banner {
     display: flex;
@@ -35,22 +35,4 @@
         }
     }
 
-    h1 {
-        color: $color-white;
-        font-size: 40px;
-        font-weight: 500;
-        margin: auto;
-        margin-top: -130px;
-        margin-bottom: 80px;
-        z-index: 1;
-
-        @include mobile {
-            font-size: 24px;
-            font-weight: 500;
-            margin-top: -75px;
-            height: 48px;
-            padding: 0px 40px;
-            margin-bottom: 25px;
-        }
-    }
 }
