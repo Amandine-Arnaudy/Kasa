@@ -1,10 +1,11 @@
 import React from 'react'
-import AboutBanner from '../components/About/About'
+import AboutBanner from '../components/About/Banner2/About'
 
 function About() {
     return (
         <>
-        <AboutBanner />
+                <AboutBanner />
+
         </>
     )
 }
