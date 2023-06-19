@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Main(props) {
+function Main2(props) {
     const children = props.children;
     return (
-        <div className='layout'>{...children}</div>
+        <div className='about'>{...children}</div>
     )
 }
 
-export default Main
+export default Main2

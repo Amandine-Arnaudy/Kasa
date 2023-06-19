@@ -1,0 +1,76 @@
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
+
+.collapse {
+    width: 70%;
+    margin: 38px auto;
+
+    @include mobile {
+        width: 95%;
+        margin: 19px auto;
+    }
+
+    &_title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding: 0px 15px;
+        border-radius: 5px;
+        color: $color-white;
+        background-color: $color-principal;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+    h2 {
+        margin: 0px;
+        padding: 10px 0px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 142.6%;
+
+        @include mobile {
+            padding: 5px 0px;
+            font-size: 15px;
+        }
+    }
+
+    img {
+        padding: 19px 0px;
+        cursor: pointer;
+
+        @include mobile {
+            padding: 10px 0px;
+        }
+    }
+
+    p {
+        color: $color-principal;
+        background-color: $color-grey;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 18px;
+
+
+        @include mobile {
+            margin-top: -20px;
+            font-size: 13px;
+        }
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+
+    .rotate0 {
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+
+}
