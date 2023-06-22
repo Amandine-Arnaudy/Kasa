@@ -48,7 +48,9 @@ function Collapse() {
                             onClick={() => toggleItem(elt.id)}
                         />
                     </div>
-                    {expandedItems.includes(elt.id) && <p>{elt.text}</p>}
+                    <p className={`collapse_text ${expandedItems.includes(elt.id) ? 'expand' : 'expand1'}`}>
+                        {elt.text}
+                    </p>
                 </div>
             ))}
         </section>

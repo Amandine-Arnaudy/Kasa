@@ -49,7 +49,7 @@
     p {
         color: $color-principal;
         background-color: $color-grey;
-        padding: 20px;
+        //padding: 20px;
         border-radius: 5px;
         margin-top: -30px;
         margin-bottom: 30px;
@@ -71,6 +71,20 @@
     .rotate0 {
         transform: rotate(0deg);
         transition: transform 0.3s ease;
+    }
+
+    .expand {
+        max-height: 1000px;
+        transition: max-height 0.3s ease, padding 0.4s ease;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    .expand1 {
+        max-height: 0;
+        transition: max-height 0.3s ease, padding 0.4s ease;
+        overflow: hidden;
+        padding: 0;
     }
 
 }

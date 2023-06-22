@@ -6,14 +6,13 @@ import Apartment from './Apartment.jsx'
 function Apartement() {
     const [apartments, setApartments] = useState([]);
 
-    useEffect(fetchApartments, []);
-
-    function fetchApartments() {
+    useEffect(() => {
         fetch("annonces.json")
             .then((res) => res.json())
             .then((res) => setApartments(res))
             .catch(console.error);
-    }
+    }, []);
+
     return (
         <section className='apartment'>
 
