@@ -15,17 +15,16 @@ function Apartement() {
 
     return (
         <section className='apartment'>
-
             <div className="annonces">
 
                 {apartments.map((apartment) => (
-                    <Apartment key={apartment.id} title={apartment.title} imageURL={apartment.cover} />
+                    <Apartment key={apartment.id} id={apartment.id} title={apartment.title} imageURL={apartment.cover} />
                 ))}
 
             </div>
-
-        </section>
+        </section> 
     )
 }
 
 export default Apartement
+
