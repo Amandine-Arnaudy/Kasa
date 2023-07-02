@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import '../components/Error/Error.scss' 
+import '../components/Error/Error.scss'
 
 function ErrorPage() {
     return (

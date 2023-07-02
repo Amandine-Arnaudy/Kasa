@@ -34,8 +34,8 @@ function About() {
                 {details.map(details => {
                     return (
                         <div key={details.id} className="collapse_container">
-							<Collapse title={details.title} text={details.text} />
-						</div>
+                            <Collapse title={details.title} text={details.text} />
+                        </div>
                     )
                 })}
             </section>

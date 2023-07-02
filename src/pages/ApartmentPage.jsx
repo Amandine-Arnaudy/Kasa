@@ -1,41 +1,46 @@
 import React, { useEffect, useState } from 'react';
+import { useParams, useNavigate } from "react-router-dom";
 import Carrousel from '../components/Carrousel/Carrousel';
-import Description from '../components/DescriptionApartment/DescriptionApartment';
-import { useLocation } from 'react-router-dom';
-import Collapse from '../components/Collapse/Collapse'
-
+import Collapse from '../components/Collapse/Collapse';
+import Apartment from '../components/DescriptionApartment/DescriptionApartment';
 
 function Apartments() {
-    const location = useLocation();
-    //console.log("location", location);
-
-    const [apartment, setApartment] = useState(null);
+    const params = useParams();
+    const navigate = useNavigate();
+    const [apartment, setApartment] = useState();
 
     useEffect(() => {
-        fetch("annonces.json")
-            .then((res) => res.json())
-            .then((apartments) => {
-                const apartment = apartments.find((apartment) => apartment.id === location.state.apartmentId);
-                setApartment(apartment);
-            })
-            .catch(console.error);
-    }, []);
 
-    if (apartment == null) return <div>...Loading</div>;
+        const apartmentData = async () => {
+            const res = await fetch("/annonces.json");
+            const data = await res.json();
+            const apartments = data.find(({ id }) => id === params.id);
+            data.map(() => setApartment(apartments));
+            if (apartments) {
+                setApartment(apartments);
+            } else {
+                navigate('*');
+            }
+        };
+        apartmentData();
+
+    }, [params.id, navigate]);
 
     return (
-        <>
-            <Carrousel pictures={apartment.pictures} />
-            <Description title={apartment.title} description={apartment.description} location={apartment.location} name={apartment.host.name} tags={apartment.tags} picture={apartment.host.picture} rating={apartment.rating} />
-            <section className='collapse2'>
-                <div className="collapse_container test">
-                    <Collapse title="Description" text= {apartment.description}/>
-                </div>
-                <div className="collapse_container test">
-                    <Collapse title="Équipements" text= {apartment.equipments} />
-                </div>
-            </section>
-        </>
+        apartment && (
+            <div key={params.id}>
+                <Carrousel pictures={apartment.pictures} />
+                <Apartment title={apartment.title} description={apartment.description} location={apartment.location} name={apartment.host.name} tags={apartment.tags} picture={apartment.host.picture} rating={apartment.rating} />
+                <section className='collapse2'>
+                    <div className="collapse_container secondPage">
+                        <Collapse title="Description" text={apartment.description} />
+                    </div>
+                    <div className="collapse_container secondPage">
+                        <Collapse title="Équipements" text={apartment.equipments} />
+                    </div>
+                </section>
+            </div>
+        )
     );
 }
 
