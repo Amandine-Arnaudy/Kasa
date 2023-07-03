@@ -1,7 +1,7 @@
 import Banner from '../components/Banner/Banner'
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../components/Grid/Grid.scss';
+import '../components/Styles/Grid/Grid.scss';
 
 function App() {
   const [apartments, setApartments] = useState([]);
