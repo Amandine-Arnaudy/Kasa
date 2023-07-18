@@ -1,0 +1,64 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+body {
+    margin: 0 auto;
+    @include fonts;
+    max-width: 1440px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding: 55px 0px;
+
+
+    img {
+        width: 210px;
+        height: 68px;
+
+        @include mobile {
+            width: 145px;
+            height: 46px;
+        }
+    }
+
+    @include mobile {
+        width: 95%;
+        padding: 30px 0px;
+
+    }
+
+    &_link {
+        display: flex;
+        align-items: center;
+        font-size: 19px;
+        padding: 0;
+        gap: 57px;
+
+        @include mobile {
+            font-size: 12px;
+            gap: 26px;
+            text-transform: uppercase;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-principal;
+            cursor: pointer;
+
+            &.active,
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+}
