@@ -1,0 +1,139 @@
+@import "../.././scss/mixins";
+@import "../.././scss/variables";
+
+.description {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @include mobile {
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 0px;
+    }
+
+    &_title {
+        color: $color-principal;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0px;
+            gap: 10px;
+            color: white;
+            flex-wrap: wrap;
+
+
+            li {
+                background-color: $color-principal;
+                border-radius: 10px;
+                padding: 3px 2rem;
+
+                @include mobile {
+                    font-size: 12px;
+                    padding: 2px 1.5rem;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        margin: 0px;
+        margin-top: 30px;
+
+        @include mobile {
+            font-size: 22px;
+            margin-top: 15px;
+        }
+    }
+
+    h2 {
+        font-size: 18px;
+        margin: 0px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+
+    &_author {
+        display: flex;
+        flex-direction: column;
+
+        @include mobile {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &_img {
+            display: flex;
+            margin-top: 30px;
+            gap: 10px;
+            align-items: center;
+
+            @include mobile {
+                margin: 0px;
+            }
+
+            h3 {
+                color: $color-principal;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+                width: 93px;
+                margin: 0px;
+                text-align: right;
+
+                @include mobile {
+                    font-size: 12px;
+                    width: 60px;
+                }
+            }
+
+            img {
+                height: 64px;
+                width: 64px;
+                border-radius: 64px;
+
+                @include mobile {
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 35px;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0px;
+            gap: 10px;
+            justify-content: flex-end;
+            font-size: 1.8rem;
+            margin: 15px 0px;
+            color: #e3e3e3;
+
+
+            @include mobile {
+                font-size: 1rem;
+                gap: 5px;
+            }
+
+            .full {
+                color: $color-principal;
+            }
+
+        }
+    }
+}
