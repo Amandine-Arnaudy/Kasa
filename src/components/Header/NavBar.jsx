@@ -4,8 +4,8 @@ import './NavBar.scss'
 import headerImg from '../../assets/Logo.png'
 
 function Navbar() {
-    return (
-        <header className='navbar'>
+  return (
+    <header className='navbar'>
       <div className='navbar_logo'>
         <img src={headerImg} alt="Logo Kasa" />
       </div>
@@ -14,7 +14,7 @@ function Navbar() {
         <li> <NavLink to="/about">A Propos</NavLink> </li>
       </ul>
     </header>
-    )
+  )
 }
 
 export default Navbar

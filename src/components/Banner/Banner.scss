@@ -1,0 +1,56 @@
+@import "../.././scss/mixins";
+@import "../.././scss/variables";
+
+.banner {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 85%;
+        margin: auto;
+        height: 223px;
+        object-fit: cover;
+        border-radius: 25px;
+
+        @include mobile {
+            width: 95%;
+            height: 110px;
+        }
+    }
+
+    div {
+        background-color: $color-black;
+        opacity: 0.3;
+        width: 85%;
+        top: 201px;
+        margin: auto;
+        margin-top: -222px;
+        height: 223px;
+        border-radius: 25px;
+
+        @include mobile {
+            width: 95%;
+            height: 110px;
+            margin-top: -110px;
+        }
+    }
+
+    h1 {
+        color: $color-white;
+        font-size: 40px;
+        font-weight: 500;
+        margin: auto;
+        margin-top: -130px;
+        margin-bottom: 80px;
+        z-index: 1;
+
+        @include mobile {
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: -75px;
+            height: 48px;
+            padding: 0px 40px;
+            margin-bottom: 25px;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import "../../../scss/mixins";
+@import "../../../scss/variables";
+
+.apartment {
+    background-color: $color-grey;
+    border-radius: 25px;
+    width: 85%;
+    margin: 50px auto;
+    padding-bottom: 0px;
+
+    @include mobile {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
+
+.annonces {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 25px;
+
+    @include mobile {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        width: 30%;
+        height: 18em;
+        text-decoration: none;
+
+        @include mobile {
+            width: 100%;
+            height: 15rem;
+        }
+
+        @include tablette {
+            width: 46%;
+        }
+    }
+
+    h3 {
+        color: $color-white;
+        font-weight: 500;
+        font-size: 18px;
+        position: absolute;
+        padding-top: 215px;
+        padding-left: 10px;
+        margin-right: 80px;
+        margin-bottom: 0px;
+        width: 240px;
+        z-index: 2;
+
+        @include mobile {
+            padding-top: 170px;
+        }
+    }
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        -webkit-filter: brightness(80%);
+        filter: brightness(80%);
+    }
+
+    a:hover {
+        -webkit-filter: brightness(70%);
+        filter: brightness(70%);
+    }
+
+}
