@@ -1,0 +1,49 @@
+[
+    {
+        "id": "1",
+        "title": "Booki",
+        "cover": "https://user.oc-static.com/upload/2022/06/20/16557256333819_FR_1155_P3_Banner-Booki.png",
+        "descriptions": "Booki est un projet de formation que j'ai réalisé au cours de ma formation en tant qu'Intégrateur web sur OpenClassrooms. En partant d'une maquette Figma, j'ai conçu une page d'accueil optimisée pour les ordinateurs de bureau, tout en employant les media queries pour assurer la compatibilité du site avec les tablettes et les appareils mobiles.",
+        "githubUrl": "https://amandine-arnaudy.github.io/Booki/",
+        "compétences": [
+            "Html",
+            "Css"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Ohmyfood",
+        "cover": "https://user.oc-static.com/upload/2022/06/22/16559011566667_FR_1117_P4_Banner-Ohmyfood.png",
+        "descriptions": "OhMyFood est un projet de formation que j'ai mené au sein de ma formation sur OpenClassrooms pour développer mes compétences en animations CSS. À partir d'une maquette Figma adoptant une approche 'mobile first', j'ai implémenté une page d'accueil, quatre pages de menus de restaurants, ainsi qu'un élément de chargement (loader).",
+        "githubUrl": "https://amandine-arnaudy.github.io/Ohmyfood/",
+        "compétences": [
+            "Html",
+            "Sass",
+            "Github"
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Sophie Bruel Portfolio",
+        "cover": "https://raw.githubusercontent.com/Amandine-Arnaudy/Portfolio-architecte-sophie-bluel/master/FrontEnd/assets/images/sophie-bluel.png",
+        "descriptions": "Sophie Bluel - Portfolio représente un projet de formation que j'ai réalisé sur lors de ma formation OpenClassrooms pour acquérir des compétences en JavaScript. En me basant sur une maquette Figma, j'ai conçu une page de connexion et j'ai dynamiquement affiché les travaux présents dans le portfolio en utilisant une API. J'ai également intégré une fenêtre modale permettant ainsi à l'administrateur du site d'ajouter ou de supprimer des travaux.",
+        "githubUrl": "https://github.com/Amandine-Arnaudy/Sophie-Bruel-Portfolio",
+        "compétences": [
+            "Html",
+            "Css",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Kasa",
+        "cover": "https://user.oc-static.com/upload/2022/06/24/16560899769906_FR_811_P8_Banner-Kasa%20%281%29.png",
+        "descriptions": "Kasa est un projet de formation que j'ai réalisé au cours de ma formation sur OpenClassrooms, où j'ai acquis une première expérience pratique avec React. J'ai utilisé React pour afficher des logements et créer des composants réutilisables tels que des collapses et des carousels, ce qui m'a permis de développer mes compétences dans le développement d'applications web interactives.",
+        "githubUrl": "https://github.com/Amandine-Arnaudy/Kasa",
+        "compétences": [
+            "Html",
+            "Sass",
+            "React"
+        ]
+    }
+]

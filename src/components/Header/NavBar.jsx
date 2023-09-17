@@ -6,13 +6,16 @@ import headerImg from '../../assets/Logo.png'
 function Navbar() {
   return (
     <header className='navbar'>
+
       <div className='navbar_logo'>
-        <img src={headerImg} alt="Logo Kasa" />
+        <img src={headerImg} alt="Logo" />
       </div>
       <ul className='navbar_link'>
-        <li> <NavLink to="/">Accueil</NavLink> </li>
-        <li> <NavLink to="/about">A Propos</NavLink> </li>
+        <li> <NavLink to="/">HOME</NavLink> </li>
+        <li> <NavLink to="/projects">PROJECTS</NavLink> </li>
+        <li> <NavLink to="/contact">CONTACT</NavLink> </li>
       </ul>
+
     </header>
   )
 }

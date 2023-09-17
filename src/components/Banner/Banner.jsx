@@ -1,14 +1,16 @@
 import React from 'react'
 import '././Banner.scss'
-import bannerPage from '../../assets/Banner.png'
+import imgMac from '../../assets/Desktop.png'
+
 
 function Banner() {
   return (
-    <div className='banner'>
-        <img src={bannerPage} alt="Image banner" />
-        <div></div>
-        <h1>Chez vous, partout et ailleurs</h1>
+
+    <div className='desktop'>
+      <h1>Développeuse</h1>
+      <img src={imgMac} alt="banner" />
     </div>
+
   )
 }
 

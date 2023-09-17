@@ -1,9 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/NavBar";
 import Home from "./pages/HomePage";
-import About from "./pages/About";
-import Apartment from "./pages/ApartmentPage";
-import Error from "./pages/ErrorPage";
+import Contact from "./pages/ContactPage";
+import Projects from './pages/ProjectsPage';
 import Footer from "./components/Footer/Footer";
 
 
@@ -13,9 +12,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/apartment/:id" element={<Apartment />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
     </div>

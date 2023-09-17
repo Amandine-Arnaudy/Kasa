@@ -27,3 +27,16 @@
     font-style: normal;
     font-weight: 500;
 }
+
+@font-face {
+    font-family: 'Gistesy';
+    src: url('../assets/Gistesy.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin fonts-gistesy {
+    font-family: 'Gistesy';
+    font-style: normal;
+    font-weight: 500;
+}
